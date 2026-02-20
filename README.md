@@ -1,62 +1,25 @@
-# DAL-LABORATORY
+# Geomarketing Methodology Framework
 
-# BLOQUE 01 – PERFIL DEMOGRÁFICO
+Este repositorio contiene la arquitectura técnica y metodológica para el desarrollo de proyectos de geomarketing bajo un enfoque modular, reproducible y versionado.
 
-## Objetivo
-Construir capa consolidada demográfica normalizada por unidad espacial.
+La metodología está estructurada en bloques independientes (Jupyter Notebooks), organizados por etapas del flujo de trabajo:
 
-## Inputs
-- poblacion.shp
-- genero.shp
-- discapacidad.csv
+1. Limpieza de datos
+2. Integración de indicadores
+3. Filtrado y análisis por dimensión
+4. (Futura) construcción de índice ponderado
 
-## Procesos
-- Limpieza
-- Homologación de CRS
-- Join espacial
-- Normalización
+Cada bloque:
+-Tiene múltiples insumos
+-Genera un único output formal
+-Está versionado mediante Git
+-Es reproducible de manera independiente
 
-## Output
-blk01_perfdem_v01.shp
+La unidad espacial base del proyecto es la manzana (salvo casos específicos como movilidad lineal o puntual).
 
+Este repositorio está diseñado para:
 
-geomarketing-project/
-│
-├── data_raw/
-│   ├── demografico/
-│   ├── economico/
-│   ├── movilidad/
-│
-├── data_processed/
-│
-├── outputs/
-│   ├── capas_intermedias/
-│   └── resultados_finales/
-│
-├── notebooks/
-│   ├── 01_perfil_demografico.ipynb
-│   ├── 02_economico.ipynb
-│   ├── 03_movilidad.ipynb
-│   ├── 04_diagnostico_mercado.ipynb
-│   ├── 05_ponderacion_inicial.ipynb
-│   ├── 06_ponderacion_final.ipynb
-│
-├── src/
-│   ├── utils.py
-│   ├── limpieza.py
-│   ├── ponderacion.py
-│
-├── environment.yml
-└── README.md
-
-
-
-INSUMOS (I) 
-    ↓
-Perfil Demográfico  → 
-Económico            →  Diagnóstico Mercado/Demanda  →
-Movilidad            → 
-    ↓
-Ponderación Inicial
-    ↓
-Ponderación Final
+-Trabajo colaborativo mediante branches
+-Trazabilidad completa de transformaciones
+-Separación estricta entre datos crudos, procesados y resultados
+-Escalabilidad metodológica
