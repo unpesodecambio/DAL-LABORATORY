@@ -29,3 +29,15 @@ geomarketing-project/
 │
 ├── environment.yml
 └── README.md
+
+
+
+INSUMOS (I) 
+    ↓
+Perfil Demográfico  → 
+Económico            →  Diagnóstico Mercado/Demanda  →
+Movilidad            → 
+    ↓
+Ponderación Inicial
+    ↓
+Ponderación Final
