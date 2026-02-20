@@ -1,5 +1,24 @@
 # DAL-LABORATORY
 
+# BLOQUE 01 – PERFIL DEMOGRÁFICO
+
+## Objetivo
+Construir capa consolidada demográfica normalizada por unidad espacial.
+
+## Inputs
+- poblacion.shp
+- genero.shp
+- discapacidad.csv
+
+## Procesos
+- Limpieza
+- Homologación de CRS
+- Join espacial
+- Normalización
+
+## Output
+blk01_perfdem_v01.shp
+
 
 geomarketing-project/
 │
