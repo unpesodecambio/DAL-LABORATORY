@@ -1,0 +1,2 @@
+Requirement already satisfied: shapely in c:\users\alejandro\anaconda3\lib\site-packages (2.0.5)
+Requirement already satisfied: numpy<3,>=1.14 in c:\users\alejandro\anaconda3\lib\site-packages (from shapely) (1.26.4)
